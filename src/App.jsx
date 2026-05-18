@@ -280,6 +280,23 @@ function App() {
   const [activeFilter, setActiveFilter] = useState("All");
   const [selectedProject, setSelectedProject] = useState(null);
   const [selectedOS, setSelectedOS] = useState(null);
+  const [isClosing, setIsClosing] = useState(false);
+
+  const handleCloseProject = () => {
+    setIsClosing(true);
+    setTimeout(() => {
+      setSelectedProject(null);
+      setIsClosing(false);
+    }, 300);
+  };
+
+  const handleCloseOS = () => {
+    setIsClosing(true);
+    setTimeout(() => {
+      setSelectedOS(null);
+      setIsClosing(false);
+    }, 300);
+  };
 
   const filteredProjects = HARDCODED_PROJECTS.filter(p => activeFilter === "All" || p.category === activeFilter);
 
@@ -555,9 +572,9 @@ function App() {
 
       {/* Project Details Modal */}
       {selectedProject && (
-        <div className="modal-overlay" onClick={() => setSelectedProject(null)}>
-          <div className="modal-content glass-card" onClick={e => e.stopPropagation()}>
-            <button className="modal-close" onClick={() => setSelectedProject(null)}>×</button>
+        <div className={`modal-overlay ${isClosing ? 'closing' : ''}`} onClick={handleCloseProject}>
+          <div className={`modal-content glass-card ${isClosing ? 'closing' : ''}`} onClick={e => e.stopPropagation()}>
+            <button className="modal-close" onClick={handleCloseProject}>×</button>
             <h2 style={{ fontSize: '2rem', marginBottom: '1rem', color: '#fff' }}>{selectedProject.title}</h2>
             <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
               {selectedProject.tags.map(tag => (
@@ -583,9 +600,9 @@ function App() {
 
       {/* OS Details Modal */}
       {selectedOS && (
-        <div className="modal-overlay" onClick={() => setSelectedOS(null)}>
-          <div className="modal-content glass-card" onClick={e => e.stopPropagation()}>
-            <button className="modal-close" onClick={() => setSelectedOS(null)}>×</button>
+        <div className={`modal-overlay ${isClosing ? 'closing' : ''}`} onClick={handleCloseOS}>
+          <div className={`modal-content glass-card ${isClosing ? 'closing' : ''}`} onClick={e => e.stopPropagation()}>
+            <button className="modal-close" onClick={handleCloseOS}>×</button>
             <h2 style={{ fontSize: '2rem', marginBottom: '1rem', color: '#fff' }}>{selectedOS.org} - Contributions</h2>
             <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
               {selectedOS.tags.map(tag => (
