@@ -533,8 +533,8 @@ function App() {
               <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>
                 What sets me apart is not just my ability to write code, but my ability to <strong>understand the entire system architecture</strong>. I think in terms of scalability, performance impact, and data pipelines. Whether it's managing open-source contributions for global medical imaging standards (OSIPI) or building concurrent systems from scratch, I focus on shipping robust, production-ready systems.
               </p>
-              <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#fff', fontWeight: 500 }}>
-                I am actively seeking roles where I can leverage AI to solve real-world problems. Let's build something incredible.
+              <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#fff', fontWeight: 500, position: 'relative' }}>
+                I am actively seeking roles where I can leverage AI to solve real-world problems. When I'm not training models, I'm probably <span className="easter-egg-trigger">watching anime<img src="/anime.png" alt="Anime Easter Egg" className="easter-egg-image" /></span> or sleeping. Let's build something incredible.
               </p>
             </div>
           </div>

@@ -426,3 +426,37 @@ section {
 .delay-1 { animation-delay: 0.1s; }
 .delay-2 { animation-delay: 0.2s; }
 .delay-3 { animation-delay: 0.3s; }
+.easter-egg-trigger {
+  color: var(--accent-color);
+  font-weight: 600;
+  cursor: crosshair;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.easter-egg-trigger:hover {
+  color: #fff;
+  text-shadow: 0 0 10px var(--accent-purple);
+}
+
+.easter-egg-image {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  transform: translateX(-50%) scale(0.8) translateY(20px);
+  opacity: 0;
+  visibility: hidden;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.8), 0 0 0 2px var(--accent-purple);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.easter-egg-trigger:hover .easter-egg-image {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) scale(1) translateY(0);
+}
