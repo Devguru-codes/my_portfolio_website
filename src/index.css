@@ -460,3 +460,28 @@ section {
   visibility: visible;
   transform: translateX(-50%) scale(1) translateY(0);
 }
+.btn-linkedin {
+  background: #0a66c2;
+  color: #fff;
+  border-color: #0a66c2;
+  box-shadow: 0 4px 14px 0 rgba(10, 102, 194, 0.39);
+}
+
+.btn-linkedin:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(10, 102, 194, 0.5);
+  color: #fff;
+}
+
+.btn-email {
+  background: #EA4335;
+  color: #fff;
+  border-color: #EA4335;
+  box-shadow: 0 4px 14px 0 rgba(234, 67, 53, 0.39);
+}
+
+.btn-email:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(234, 67, 53, 0.5);
+  color: #fff;
+}

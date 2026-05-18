@@ -294,8 +294,8 @@ function App() {
             <a href="#opensource" style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.95rem', fontWeight: 500, transition: 'color 0.2s' }} onMouseOver={(e) => e.target.style.color = '#fff'} onMouseOut={(e) => e.target.style.color = 'var(--text-secondary)'}>Open Source</a>
             <a href="#about" style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.95rem', fontWeight: 500, transition: 'color 0.2s' }} onMouseOver={(e) => e.target.style.color = '#fff'} onMouseOut={(e) => e.target.style.color = 'var(--text-secondary)'}>About</a>
             <a href="https://github.com/Devguru-codes" target="_blank" rel="noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem' }}>GitHub</a>
-            <a href="https://www.linkedin.com/in/devguru-tiwari/" target="_blank" rel="noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem', borderColor: '#0a66c2', color: '#0a66c2' }}>LinkedIn</a>
-            <a href="mailto:devguruatwork@gmail.com" className="btn btn-primary" style={{ padding: '0.5rem 1rem' }}>Email Me</a>
+            <a href="https://www.linkedin.com/in/devguru-tiwari/" target="_blank" rel="noreferrer" className="btn btn-linkedin" style={{ padding: '0.5rem 1rem' }}>LinkedIn</a>
+            <a href="mailto:devguruatwork@gmail.com" className="btn btn-email" style={{ padding: '0.5rem 1rem' }}>Email Me</a>
           </div>
         </div>
       </nav>
@@ -316,7 +316,8 @@ function App() {
               </p>
 
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-                <a href="mailto:devguruatwork@gmail.com" className="btn btn-primary">Email Me</a>
+                <a href="mailto:devguruatwork@gmail.com" className="btn btn-email">Email Me</a>
+                <a href="https://www.linkedin.com/in/devguru-tiwari/" target="_blank" rel="noreferrer" className="btn btn-linkedin">LinkedIn</a>
                 <a href="#experience" className="btn btn-outline">My Experience</a>
                 <a href="#map" className="btn btn-outline">Explore The Map</a>
               </div>
@@ -546,9 +547,9 @@ function App() {
       <footer style={{ borderTop: '1px solid var(--surface-border)', padding: '3rem 0', textAlign: 'center', color: 'var(--text-secondary)' }}>
         <p style={{ marginBottom: '1rem' }}>© 2026 Devguru. Architecting the future with AI.</p>
         <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem' }}>
-          <a href="mailto:devguruatwork@gmail.com" style={{ color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={(e) => e.target.style.color = 'var(--accent-color)'} onMouseOut={(e) => e.target.style.color = 'var(--text-secondary)'}>Email</a>
-          <a href="https://github.com/Devguru-codes" target="_blank" rel="noreferrer" style={{ color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={(e) => e.target.style.color = '#fff'} onMouseOut={(e) => e.target.style.color = 'var(--text-secondary)'}>GitHub</a>
-          <a href="https://www.linkedin.com/in/devguru-tiwari/" target="_blank" rel="noreferrer" style={{ color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={(e) => e.target.style.color = '#0a66c2'} onMouseOut={(e) => e.target.style.color = 'var(--text-secondary)'}>LinkedIn</a>
+          <a href="mailto:devguruatwork@gmail.com" style={{ color: '#EA4335', textDecoration: 'none', transition: 'color 0.2s', fontWeight: 600 }} onMouseOver={(e) => e.target.style.color = '#fff'} onMouseOut={(e) => e.target.style.color = '#EA4335'}>Email</a>
+          <a href="https://github.com/Devguru-codes" target="_blank" rel="noreferrer" style={{ color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s', fontWeight: 600 }} onMouseOver={(e) => e.target.style.color = '#fff'} onMouseOut={(e) => e.target.style.color = 'var(--text-secondary)'}>GitHub</a>
+          <a href="https://www.linkedin.com/in/devguru-tiwari/" target="_blank" rel="noreferrer" style={{ color: '#0a66c2', textDecoration: 'none', transition: 'color 0.2s', fontWeight: 600 }} onMouseOver={(e) => e.target.style.color = '#fff'} onMouseOut={(e) => e.target.style.color = '#0a66c2'}>LinkedIn</a>
         </div>
       </footer>
 
