@@ -477,29 +477,31 @@ section {
   transform: translateX(-50%) scale(1) translateY(0);
 }
 .btn-linkedin {
-  background: #0a66c2;
-  color: #fff;
-  border-color: #0a66c2;
-  box-shadow: 0 4px 14px 0 rgba(10, 102, 194, 0.39);
+  background: transparent;
+  color: white;
+  border: 1px solid var(--surface-border);
 }
 
 .btn-linkedin:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(10, 102, 194, 0.5);
+  background: rgba(10, 102, 194, 0.1);
+  border-color: #0a66c2;
   color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(10, 102, 194, 0.3);
 }
 
 .btn-email {
-  background: #EA4335;
-  color: #fff;
-  border-color: #EA4335;
-  box-shadow: 0 4px 14px 0 rgba(234, 67, 53, 0.39);
+  background: transparent;
+  color: white;
+  border: 1px solid var(--surface-border);
 }
 
 .btn-email:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(234, 67, 53, 0.5);
+  background: rgba(234, 67, 53, 0.1);
+  border-color: #EA4335;
   color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(234, 67, 53, 0.3);
 }
 @keyframes fadeOut {
   from { opacity: 1; }
