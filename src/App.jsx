@@ -294,7 +294,8 @@ function App() {
             <a href="#opensource" style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.95rem', fontWeight: 500, transition: 'color 0.2s' }} onMouseOver={(e) => e.target.style.color = '#fff'} onMouseOut={(e) => e.target.style.color = 'var(--text-secondary)'}>Open Source</a>
             <a href="#about" style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.95rem', fontWeight: 500, transition: 'color 0.2s' }} onMouseOver={(e) => e.target.style.color = '#fff'} onMouseOut={(e) => e.target.style.color = 'var(--text-secondary)'}>About</a>
             <a href="https://github.com/Devguru-codes" target="_blank" rel="noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem' }}>GitHub</a>
-            <a href="https://www.linkedin.com/in/devguru-tiwari/" target="_blank" rel="noreferrer" className="btn btn-primary" style={{ padding: '0.5rem 1rem', background: '#0a66c2', borderColor: '#0a66c2', color: '#fff' }}>LinkedIn</a>
+            <a href="https://www.linkedin.com/in/devguru-tiwari/" target="_blank" rel="noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem', borderColor: '#0a66c2', color: '#0a66c2' }}>LinkedIn</a>
+            <a href="mailto:devguruatwork@gmail.com" className="btn btn-primary" style={{ padding: '0.5rem 1rem' }}>Email Me</a>
           </div>
         </div>
       </nav>
@@ -314,8 +315,9 @@ function App() {
                 I am a <strong>Data Scientist & Systems Engineer.</strong> I don't just write code - I architect scalable systems, analyze complex datasets, and orchestrate machine learning models to rapidly prototype and ship production-ready applications. I bridge the gap between deep analytical research and low-level system execution.
               </p>
 
-              <div style={{ display: 'flex', gap: '1rem' }}>
-                <a href="#experience" className="btn btn-primary">My Experience</a>
+              <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+                <a href="mailto:devguruatwork@gmail.com" className="btn btn-primary">Email Me</a>
+                <a href="#experience" className="btn btn-outline">My Experience</a>
                 <a href="#map" className="btn btn-outline">Explore The Map</a>
               </div>
             </div>
@@ -544,6 +546,7 @@ function App() {
       <footer style={{ borderTop: '1px solid var(--surface-border)', padding: '3rem 0', textAlign: 'center', color: 'var(--text-secondary)' }}>
         <p style={{ marginBottom: '1rem' }}>© 2026 Devguru. Architecting the future with AI.</p>
         <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem' }}>
+          <a href="mailto:devguruatwork@gmail.com" style={{ color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={(e) => e.target.style.color = 'var(--accent-color)'} onMouseOut={(e) => e.target.style.color = 'var(--text-secondary)'}>Email</a>
           <a href="https://github.com/Devguru-codes" target="_blank" rel="noreferrer" style={{ color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={(e) => e.target.style.color = '#fff'} onMouseOut={(e) => e.target.style.color = 'var(--text-secondary)'}>GitHub</a>
           <a href="https://www.linkedin.com/in/devguru-tiwari/" target="_blank" rel="noreferrer" style={{ color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={(e) => e.target.style.color = '#0a66c2'} onMouseOut={(e) => e.target.style.color = 'var(--text-secondary)'}>LinkedIn</a>
         </div>
