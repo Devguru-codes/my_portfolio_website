@@ -304,7 +304,9 @@ function App() {
     <>
       <nav className="navbar">
         <div className="container nav-content">
-          <a href="#" className="logo">Devguru.</a>
+          <a href="#" className="logo" style={{ textDecoration: 'none', letterSpacing: '-0.5px' }}>
+            <span style={{ color: '#fff' }}>Dev</span><span style={{ color: 'var(--text-secondary)' }}>guru</span><span style={{ color: 'var(--accent-color)' }}>.</span>
+          </a>
           <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
             <a href="#experience" style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.95rem', fontWeight: 500, transition: 'color 0.2s' }} onMouseOver={(e) => e.target.style.color = '#fff'} onMouseOut={(e) => e.target.style.color = 'var(--text-secondary)'}>Experience</a>
             <a href="#map" style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.95rem', fontWeight: 500, transition: 'color 0.2s' }} onMouseOver={(e) => e.target.style.color = '#fff'} onMouseOut={(e) => e.target.style.color = 'var(--text-secondary)'}>Projects</a>
@@ -333,9 +335,9 @@ function App() {
               </p>
 
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+                <a href="#experience" className="btn btn-primary">My Experience</a>
                 <a href="mailto:devguruatwork@gmail.com" className="btn btn-email">Email Me</a>
                 <a href="https://www.linkedin.com/in/devguru-tiwari/" target="_blank" rel="noreferrer" className="btn btn-linkedin">LinkedIn</a>
-                <a href="#experience" className="btn btn-outline">My Experience</a>
                 <a href="#map" className="btn btn-outline">Explore The Map</a>
               </div>
             </div>
