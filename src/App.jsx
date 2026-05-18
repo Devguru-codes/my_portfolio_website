@@ -281,6 +281,13 @@ function App() {
   const [selectedProject, setSelectedProject] = useState(null);
   const [selectedOS, setSelectedOS] = useState(null);
   const [isClosing, setIsClosing] = useState(false);
+  const [emailCopied, setEmailCopied] = useState(false);
+
+  const handleEmailClick = () => {
+    navigator.clipboard.writeText('devguruatwork@gmail.com');
+    setEmailCopied(true);
+    setTimeout(() => setEmailCopied(false), 2000);
+  };
 
   const handleCloseProject = () => {
     setIsClosing(true);
@@ -314,7 +321,9 @@ function App() {
             <a href="#about" style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.95rem', fontWeight: 500, transition: 'color 0.2s' }} onMouseOver={(e) => e.target.style.color = '#fff'} onMouseOut={(e) => e.target.style.color = 'var(--text-secondary)'}>About</a>
             <a href="https://github.com/Devguru-codes" target="_blank" rel="noreferrer" className="btn btn-outline" style={{ padding: '0.5rem 1rem' }}>GitHub</a>
             <a href="https://www.linkedin.com/in/devguru-tiwari/" target="_blank" rel="noreferrer" className="btn btn-linkedin" style={{ padding: '0.5rem 1rem' }}>LinkedIn</a>
-            <a href="mailto:devguruatwork@gmail.com" className="btn btn-email" style={{ padding: '0.5rem 1rem' }}>Email Me</a>
+            <a href="mailto:devguruatwork@gmail.com" className="btn btn-email" style={{ padding: '0.5rem 1rem' }} onClick={handleEmailClick}>
+              {emailCopied ? 'Copied!' : 'Email Me'}
+            </a>
           </div>
         </div>
       </nav>
@@ -336,7 +345,9 @@ function App() {
 
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <a href="#experience" className="btn btn-primary">My Experience</a>
-                <a href="mailto:devguruatwork@gmail.com" className="btn btn-email">Email Me</a>
+                <a href="mailto:devguruatwork@gmail.com" className="btn btn-email" onClick={handleEmailClick}>
+                  {emailCopied ? 'Copied!' : 'Email Me'}
+                </a>
                 <a href="https://www.linkedin.com/in/devguru-tiwari/" target="_blank" rel="noreferrer" className="btn btn-linkedin">LinkedIn</a>
                 <a href="#map" className="btn btn-outline">Explore The Map</a>
               </div>
@@ -566,7 +577,9 @@ function App() {
       <footer style={{ borderTop: '1px solid var(--surface-border)', padding: '3rem 0', textAlign: 'center', color: 'var(--text-secondary)' }}>
         <p style={{ marginBottom: '1rem' }}>© 2026 Devguru. Architecting the future with AI.</p>
         <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem' }}>
-          <a href="mailto:devguruatwork@gmail.com" style={{ color: '#EA4335', textDecoration: 'none', transition: 'color 0.2s', fontWeight: 600 }} onMouseOver={(e) => e.target.style.color = '#fff'} onMouseOut={(e) => e.target.style.color = '#EA4335'}>Email</a>
+          <a href="mailto:devguruatwork@gmail.com" onClick={handleEmailClick} style={{ color: '#EA4335', textDecoration: 'none', transition: 'color 0.2s', fontWeight: 600, cursor: 'pointer' }} onMouseOver={(e) => e.target.style.color = '#fff'} onMouseOut={(e) => e.target.style.color = '#EA4335'}>
+            {emailCopied ? 'Copied!' : 'Email'}
+          </a>
           <a href="https://github.com/Devguru-codes" target="_blank" rel="noreferrer" style={{ color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s', fontWeight: 600 }} onMouseOver={(e) => e.target.style.color = '#fff'} onMouseOut={(e) => e.target.style.color = 'var(--text-secondary)'}>GitHub</a>
           <a href="https://www.linkedin.com/in/devguru-tiwari/" target="_blank" rel="noreferrer" style={{ color: '#0a66c2', textDecoration: 'none', transition: 'color 0.2s', fontWeight: 600 }} onMouseOver={(e) => e.target.style.color = '#fff'} onMouseOut={(e) => e.target.style.color = '#0a66c2'}>LinkedIn</a>
         </div>
