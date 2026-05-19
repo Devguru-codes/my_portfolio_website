@@ -4,6 +4,15 @@ const HARDCODED_PROJECTS = [
   // --- AI & ML ---
   {
     id: 1,
+    title: "AI Money Mentor (Agent Swarm)",
+    description: "Built an autonomous agent swarm using the OpenClaw framework to provide intelligent financial mentoring and analysis.",
+    longDescription: "An advanced multi-agent AI system designed for financial literacy. I utilized the OpenClaw framework to orchestrate a swarm of specialized AI agents—each handling different aspects of financial analysis and budgeting.",
+    tags: ["Agent Swarm", "OpenClaw", "LLMs", "AI Agents"],
+    category: "AI & ML",
+    link: "https://github.com/Devguru-codes/AI-Money-Mentor"
+  },
+  {
+    id: 2,
     title: "3D Lung Nodule Segmentation",
     description: "Implemented advanced 3D deep learning segmentation models for medical CT scans to detect lung nodules.",
     longDescription: "A highly complex medical computer vision project. I utilized 3D convolutional neural networks to segment lung nodules from raw volumetric CT scans, demonstrating my ability to handle highly dimensional, sensitive medical data.",
@@ -12,22 +21,13 @@ const HARDCODED_PROJECTS = [
     link: "https://github.com/Devguru-codes/Lung-Nodule-Seg3D"
   },
   {
-    id: 2,
+    id: 3,
     title: "CT Scanner Domain Adaptation",
     description: "Engineered deep learning domain adaptation techniques to normalize CT scans across different medical scanner hardware.",
     longDescription: "A cutting-edge AI research project. Medical AI models often fail when applied to images from different hospital scanners. I implemented domain adaptation techniques to normalize the data distributions, making the AI models robust regardless of the hardware used.",
     tags: ["Domain Adaptation", "Deep Learning", "Medical Imaging"],
     category: "AI & ML",
     link: "https://github.com/Devguru-codes/Med-Domain-Adapt-CT-Scanner-Domain-Adaptation-"
-  },
-  {
-    id: 3,
-    title: "AI Money Mentor (Agent Swarm)",
-    description: "Built an autonomous agent swarm using the OpenClaw framework to provide intelligent financial mentoring and analysis.",
-    longDescription: "An advanced multi-agent AI system designed for financial literacy. I utilized the OpenClaw framework to orchestrate a swarm of specialized AI agents—each handling different aspects of financial analysis and budgeting.",
-    tags: ["Agent Swarm", "OpenClaw", "LLMs", "AI Agents"],
-    category: "AI & ML",
-    link: "https://github.com/Devguru-codes/AI-Money-Mentor"
   },
   {
     id: 4,
