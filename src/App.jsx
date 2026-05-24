@@ -351,6 +351,10 @@ function App() {
                 <a href="https://www.linkedin.com/in/devguru-tiwari/" target="_blank" rel="noreferrer" className="btn btn-linkedin">LinkedIn</a>
                 <a href="#map" className="btn btn-outline">Explore The Map</a>
               </div>
+              <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1rem' }}>
+                <a href="/resume_data_scientist_real_96_ats.pdf" target="_blank" rel="noreferrer" className="btn btn-outline" style={{ borderColor: 'var(--accent-color)', color: 'var(--accent-color)', transition: 'all 0.2s' }} onMouseOver={(e) => { e.target.style.backgroundColor = 'var(--accent-color)'; e.target.style.color = '#000'; }} onMouseOut={(e) => { e.target.style.backgroundColor = 'transparent'; e.target.style.color = 'var(--accent-color)'; }}>Resume (Data Scientist)</a>
+                <a href="/resume_data_analyst_ats_94.pdf" target="_blank" rel="noreferrer" className="btn btn-outline" style={{ borderColor: 'var(--accent-purple)', color: 'var(--accent-purple)', transition: 'all 0.2s' }} onMouseOver={(e) => { e.target.style.backgroundColor = 'var(--accent-purple)'; e.target.style.color = '#fff'; }} onMouseOut={(e) => { e.target.style.backgroundColor = 'transparent'; e.target.style.color = 'var(--accent-purple)'; }}>Resume (Data Analyst)</a>
+              </div>
             </div>
           </div>
         </section>
