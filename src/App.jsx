@@ -336,7 +336,7 @@ function App() {
                 Hi, I'm Devguru Tiwari.
               </h2>
               <h1 className="hero-title" style={{ fontSize: '3.5rem' }}>
-                3rd-Year Student at IIIT Nagpur.<br />
+                4th-Year Student at IIIT Nagpur.<br />
                 <span className="gradient-text">Data Scientist & Systems Engineer.</span>
               </h1>
               <p className="hero-subtitle">
